@@ -116,7 +116,7 @@ a:focus::after {
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: url('background.png');
+    background-image: url('assets/background.png');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -179,12 +179,11 @@ a:focus::after {
 
 .opportunities {
     width: 100%;
-    height: 800px;
+    height: 900px;
     position: relative;
     box-shadow: 0 50px 20px -20px rgba(234, 187, 38, .5) inset;
     padding-top: 100px;
 }
-
 
 .opportunities-box {
     width: 80%;
@@ -214,7 +213,8 @@ a:focus::after {
     background-color: #fff;
     border-radius: 35px;
 
-    box-shadow: 0px 0px 13px 0px  rgba(234, 187, 38, .5);
+    box-shadow: 0px 0px 15px 0px #EABB26;
+    /* margin-bottom: 300px; */
 }
 
 
@@ -223,8 +223,74 @@ a:focus::after {
 
 .apply-now {
     width: 100%;
-    height: 900px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    position: relative;
 }
+
+.apply-now-image {
+    width: 400px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.apply-form-box {
+    width: 500px;
+    height: 900px;
+    margin: 150px 100px 300px 0px;
+
+    background-color: #fff;
+    border-radius: 36px;
+    box-shadow: 0px 0px 15px 0px #EABB26;
+}
+
+.apply-vector {
+
+    position: absolute;
+    right: -190px;
+    top: -260px;
+    z-index: -100;
+}
+
+.apply-reverse-vector {
+    width: 300px;
+    height: 500px;
+
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+}
+
+.centered-form {
+    margin: 40px;
+    text-align: center;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+.form-group input {
+    width: 90%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+button[type="submit"] {
+    background-color: #EABB26;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
 
 
 /* contacts */
@@ -232,7 +298,76 @@ a:focus::after {
 .contacts {
     width: 100%;
     height: 400px;
-    background-color: #EABB26;
+    background-image: linear-gradient(to top, #EABB26, transparent 100%, transparent 10%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.box-contacts {
+    width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 40px;
+}
+
+.contact-cards span {
+    padding: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: Fira Sans;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 5%;
+    background-color: #EABB26;
+    
+    display: flex;
+    align-items: center;
+
+    transition: left 5s linear;
+}
+
+.contact-cards span:hover {
+    left: calc(100% - 100px);
+}
+
+.contact-cards span:hover {
+    margin-left: 100px;
+}
+
+.contact-cards span img {
+    width: 22px;
+    margin-right: 10px;
+}
+
+.contac-gama-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 40px;
+}
+
+.contac-gama-logo  img {
+    width: 350px;
+    height: 350px;
+}
+
+
+
+/* Footer */ 
+
+footer {
+    width: 100%;
+    height: 100px;
+}
 
