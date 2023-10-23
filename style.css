@@ -266,21 +266,39 @@ a:focus::after {
 }
 
 .centered-form {
-    margin: 40px;
+    margin: 50px 40px 0px 40px;
     text-align: center;
 }
 
-.form-group {
-    margin: 20px 0;
-}
 .form-group input {
-    width: 90%;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #3A3A3A
 }
 
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    color: #3A3A3A;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    color: #3A3A3A;
+}
+
+
 .form-row {
+    width: 100%;
+
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    justify-content: space-between;
+    margin: 0;
 }
 
 button[type="submit"] {
@@ -289,6 +307,18 @@ button[type="submit"] {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+}
+
+.form-button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #3A3A3A;
+    border: none;
+    color: white;
+
+    font-family: Fira Sans;
+    font-weight: 500;
 }
 
 
