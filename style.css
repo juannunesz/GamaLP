@@ -27,11 +27,32 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.landing-content {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 82px;
+}
+
+
 body {
 	line-height: 1;
     overflow-x: hidden;
     background-color: #3A3A3A;
+    /* box-sizing: border-box; */
+    
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -401,3 +422,150 @@ footer {
     height: 100px;
 }
 
+
+@media (max-width: 480px) {
+    /* media querie mobile */
+
+    /* body {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    } */
+
+    .landing-content {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 0;
+
+    }
+
+    header { 
+        padding: 0px 30px 0px 30px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-items  {
+        width: 35%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        width: 70%;
+        height: auto;
+    }
+
+    .banner-title {
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    .banner-text-content {
+        width: 80%;
+        padding: 30px 30px 0px 30px;
+    }
+
+    .banner-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .work-with-us-box {
+        
+        width: 50%;
+        height: auto;
+        right: 0;
+        top: auto;
+    }
+    
+    .banner-vector {
+        right: -190px;
+        top: 350px;
+    }
+    
+    .banner-reverse-vector {
+        left: -190px;
+        top: 900px;
+    }
+
+    
+
+}
+
+@media (min-width: 480px ) and (max-width: 800px) {
+    /* media querie mobile to tablet */
+
+    .landing-content {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 0;
+
+    }
+
+    header { 
+        padding: 0px 30px 0px 30px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-items  {
+        width: 35%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        width: 70%;
+        height: auto;
+    }
+
+    .banner-title {
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    .banner-text-content {
+        width: 80%;
+        padding: 30px 30px 0px 30px;
+    }
+
+    .banner-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .work-with-us-box {
+        
+        width: 50%;
+        height: auto;
+        right: 0;
+        top: auto;
+    }
+    
+    .banner-vector {
+        right: -190px;
+        top: 350px;
+    }
+    
+    .banner-reverse-vector {
+        left: -190px;
+        top: 900px;
+    }
+    
+
+}
