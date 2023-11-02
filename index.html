@@ -25,35 +25,113 @@
        
     </header>
 
-    <main class="landing-content">
-        <section class="banner">
-            <div class="banner-text-content">
-                <h1 class="banner-title">
-                    Lorem ipsum <b>dolor sit amet</b>, consectetur
-                    adipiscing elit.
-                </h1>
-                <p class="banner-text">
-                    Fusce vel nibh dignissim, gravida sapien a, sollicitudin nisi.
-                    Sed blandit odio eget tempor ornare. Curabitur dolor tellus,
-                    congue ac aliquet elementum, finibus a diam. Donec id hendrerit
-                    nunc. In hac habitasse platea dictumst. In cursus volutpat mollis.
-                    Vivamus dapibus gravida enim ac commodo. Ut lacinia ipsum vel 
-                    ulla elementum fringilla ut sit amet elit.
-                </p>
-            </div>
-            <div class="work-with-us-box">
-                <img src="assets/work_with_us.svg" alt="work with us">
-            </div>
-            <img class="banner-vector" src="assets/vector.svg" alt="vetor">
-            <img  class="banner-reverse-vector" src="assets/reverse-vector.svg" alt="vetor ao contrario">
-        </section>
+    <section class="banner">
+        <div class="banner-text-content">
+            <h1 class="banner-title">
+                A successful career is a collective effort, and <b>your workforce</b> is your greatest asset.
+            </h1>
+            <p class="banner-text">
+                A successful career is a product of unity and collaboration, where your workforce serves as the cornerstone of your achievements. By valuing and harnessing the collective potential of your team, you unlock the doors to endless possibilities and ensure your career's enduring prosperity.
+            </p>
+        </div>
+        <div class="work-with-us-box">
+            <img src="assets/work_with_us.svg" alt="work with us">
+        </div>
+        <img class="banner-vector" src="assets/vector.svg" alt="vetor">
+        <img  class="banner-reverse-vector" src="assets/reverse-vector.svg" alt="vetor ao contrario">
+    </section>
 
         <div class="opportunities">
+        <div class="opportunities-box">
+            <h3 class="opportunities-title">opportunities</h3>
+            <div class="opp-container">
+                <div class="opp-selects">
+                    <select style="width: 250px;" name="search-by-area" id="search-by-area">
+                        <option value="" disabled selected>search by area</option>
+                    </select>
+                    <select style="width: 210px;" name="job-type" id="job-type">
+                        <option value="" disabled selected>job type</option>
+                    </select>
+                    <select style="width: 150px;" name="level" id="level">
+                        <option value="" disabled selected>level</option>
+                    </select>
+                    <select style="width: 110px;"  name="order" id="order">
+                        <option value="" disabled selected>order</option>
+                    </select>
+                </div>
 
-            <div class="opportunities-box">
-                <h3 class="opportunities-title">opportunities</h3>
-                <div class="opp-container">
+                <div class="opp-lines">
+                    <div class="opp-cel">
+                        <span>1.</span>
+                        <span>CLEANER</span>
+                        <span>contract</span>
+                        <span>entry level</span>
+                        <span>in site</span>
+                        <span>Dublin, IE</span>
+                    </div>
 
+                    <div class="opp-cel">
+                        <span>1.</span>
+                        <span>CLEANER</span>
+                        <span>contract</span>
+                        <span>entry level</span>
+                        <span>in site</span>
+                        <span>Dublin, IE</span>
+                    </div>
+
+                    <div class="opp-cel">
+                        <span>1.</span>
+                        <span>CLEANER</span>
+                        <span>contract</span>
+                        <span>entry level</span>
+                        <span>in site</span>
+                        <span>Dublin, IE</span>
+                    </div>
+
+                    <div class="opp-cel">
+                        <span>1.</span>
+                        <span>CLEANER</span>
+                        <span>contract</span>
+                        <span>entry level</span>
+                        <span>in site</span>
+                        <span>Dublin, IE</span>
+                    </div>
+
+                    <div class="opp-cel">
+                        <span>1.</span>
+                        <span>CLEANER</span>
+                        <span>contract</span>
+                        <span>entry level</span>
+                        <span>in site</span>
+                        <span>Dublin, IE</span>
+                    </div>
+
+
+                    <div class="opp-cel">
+                        <span>1.</span>
+                        <span>CLEANER</span>
+                        <span>contract</span>
+                        <span>entry level</span>
+                        <span>in site</span>
+                        <span>Dublin, IE</span>
+                    </div>
+
+
+                    <div class="opp-cel">
+                        <span>1.</span>
+                        <span>CLEANER</span>
+                        <span>contract</span>
+                        <span>entry level</span>
+                        <span>in site</span>
+                        <span>Dublin, IE</span>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <i><</i>
+                    <span class="number">1</span>
+                    <i>></i>
+                </div>
                 </div>
             </div>
 
@@ -119,13 +197,24 @@
                         <div class="form-group">
                             <textarea placeholder="Notes" name="notes" id="notes" cols="30" rows="5"></textarea>
                         </div>
-                        <div style="display: flex;" class="form-group">
-                            <input style="width: 5%; border-radius: 8px;" type="checkbox" id="terms-agreement">
-                            <label for="terms-agreement">I agree to the terms and conditions as set out by the user agreement.</label>
-                        </div>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="form-button upload">
+                            upload your CV
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Available to work on other areas? Which one?" name="work-areas" id="work-areas">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Notes" name="notes" id="notes" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="agreement" class="form-group">
+                        <input style="width: 5%; border-radius: 8px;" type="checkbox" id="terms-agreement">
+                        <label for="terms-agreement">I agree to the terms and conditions as set out by the user agreement.</label>
+                    </div>
+                    <button class="submit" type="button">APPLY NOW</button>
+                </form>
             </div>
 
             <img class="apply-vector" src="assets/vector.svg" alt="vetor">
@@ -156,7 +245,36 @@
     </main>
 
     <footer>
+        <div class="footer-box">
+            <div class="find-us">
+                <p>FIND US ON</p>
+                <a href="" class="social-media-links">
+                    <img src="/assets/instagram_white.svg" alt="">
+                    instagram
+                </a>
+                <a href="" class="social-media-links">
+                    <img src="/assets/facebook.svg" alt=""> 
+                    facebook
+                </a>
+                <a href="" class="social-media-links">
+                    <img src="/assets/linkedin.svg" alt=""> 
+                    linkedin
+                </a>
+            </div>
 
+            <div class="navigate">
+                <p>NAVIGATE</p>
+                <a  class="social-media-links" href="">opportunities</a>
+                <a class="social-media-links" href="">apply now</a>
+                <a class="social-media-links" href="">contact us</a>
+            </div>
+
+            <div class="terms-conditions">
+                <a class="social-media-links" href="">terms & conditions</a>
+                <a class="social-media-links" href="">about us</a>
+            </div>
+
+        </div>
     </footer>
 
 </body>
