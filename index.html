@@ -105,73 +105,108 @@
 
         <div id="apply-now-anchor" class="apply-now">
             <img class="apply-now-image" src="assets/apply_now.svg" alt="apply now">
-
+    
             <div class="apply-form-box">
                 <div class="centered-form">
-                    <form>
+                    <form id="form" action="https://formsubmit.co/juannunesdev@gmail.com" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
-                            <input type="text" placeholder="Full Name">
+                            <input type="text" id="full-name" name="name" placeholder="Full Name">
+                            <span id="error-message-full-name" class="error-message"></span>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your best email">
+                            <input type="email" id="email" name="email" autocomplete="email" placeholder="Your best email">
+                            <span id="error-message-email" class="error-message"></span>
                         </div>
-
+    
                         <div class="form-row">
                             <div style="width: 49%;" class="form-group">
-                                <input type="tel" placeholder="Primary Phone">
+                                <input type="tel" id="primary-phone" name="primary-phone" placeholder="Primary Phone">
+                                <span id="error-message-primary-phone" class="error-message"></span>
                             </div>
                             <div  style="width: 49%;" class="form-group">
-                                <input type="tel" placeholder="Secondary Phone">
+                                <input type="tel" id="secondary-phone" name="secondary-phone" placeholder="Secondary Phone">
+                                <span id="error-message-secondary-phone" class="error-message"></span>
                             </div>
                         </div>
                         
                         <div class="form-group">
-                            <input type="text" placeholder="Complete Address">
+                            <input type="text" id="address" name="address" autocomplete="address" placeholder="Complete Address">
+                            <span id="error-message-address" class="error-message"></span>
                         </div>
                         <div class="form-row">
                             <div style="width: 49%;" class="form-group">
                                 <select name="availability" id="availability">
                                     <option value="" disabled selected>Availability</option>
+                                    <option value="part-time">PART TIME</option>
+                                    <option value="full-time">FULL TIME</option>
+                                    <option value="flexible">FLEXIBLE</option>
+                                    
                                 </select>
+                                <span id="error-message-availability" class="error-message"></span>
                             </div>
                             <div style="width: 49%;" class="form-group">
                                 <select name="english-level" id="english-level">
                                     <option value="" disabled selected>English Level</option>
+                                    <option value="beginner">BEGINNER</option>
+                                    <option value="intermediate">INTERMEDIATE</option>
+                                    <option value="advanced">ADVANCED</option>
+                                    <option value="fluent-native">FLUENT/NATIVE</option>
                                 </select>
+                                <span id="error-message-english-level" class="error-message"></span>
                             </div>
                         </div>
                         <div class="form-row">
                             <div style="width: 49%;" class="form-group">
                                 <select  name="opportunity" id="opportunity">
                                     <option value="" disabled selected>Opportunity You Want</option>
+                                    <option value="1-cleaner">1.CLEANER, full time / dublin,ie</option>
+                                    <option value="2-plumber">2.PLUMBER, full time / dublin,ie</option>
                                 </select>
+                                <span id="error-message-opportunity" class="error-message"></span>
                             </div>
                             <div style="width: 49%;" class="form-group">
                                 <select name="pps" id="pps">
                                     <option value="" disabled selected>PPS</option>
+                                    <option value="yes">YES</option>
+                                    <option value="no">NO</option>
                                 </select>
+                                <span id="error-message-pps" class="error-message"></span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <button type="button" class="form-button upload">
-                                upload your CV
+                            <button type="button" class="form-button upload" id="cv-upload-button">
+                                <span id="cv-upload-text">Upload your CV</span>
                             </button>
+                            <input type="file" name="cv-upload-input" accept="image/png, image/jpeg, application/pdf" id="cv-upload-input" style="display: none">
+                            <span id="error-message-upload-cv" class="error-message"></span>
                         </div>
                         <div class="form-group">
                             <input type="text" placeholder="Available to work on other areas? Which one?" name="work-areas" id="work-areas">
+                            <span id="error-message-work-areas" class="error-message"></span>
                         </div>
                         <div class="form-group">
                             <textarea placeholder="Notes" name="notes" id="notes" cols="30" rows="5"></textarea>
+                            <span id="error-message-notes" class="error-message"></span>
                         </div>
                         <div class="agreement" class="form-group">
                             <input style="width: 5%; border-radius: 8px;" type="checkbox" id="terms-agreement">
                             <label for="terms-agreement">I agree to the terms and conditions as set out by the user agreement.</label>
+                            
                         </div>
-                        <button class="submit" type="button">APPLY NOW</button>
-                    </div>
-                </form>
+                        <span id="error-message-terms" class="error-message"></span>
+    
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Novo cadastro!">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_cc" value="juannunesdev@gmail.com">
+                        <input type="hidden" name="_next" value="http://localhost/GamaLP-main/">
+    
+                        <button class="submit" type="submit">APPLY NOW</button>
+                    </form>
+                </div>
             </div>
-
+    
             <img class="apply-vector" src="assets/vector.svg" alt="vetor">
             <img  class="apply-reverse-vector" src="assets/reverse-vector.svg" alt="vetor ao contrario">
         </div>
